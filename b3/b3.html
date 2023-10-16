@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ['ab', 'b', 'cf', 'de', 'uio',1,2,3,4,60];
+    let arr2 =[];
+    for(let i = 0; i < arr1.length;i++){
+        if((typeof arr1[i]) === "number"){
+            arr2.push(arr1[i]);
+        }
+    }
+    let l = arr2.join('');
+    document.write('mảng: '+ arr2 + '<br>')
+    document.write('Số ký tự số trong mảng là: ' + l.length);
+</script>
+</body>
+</html>
