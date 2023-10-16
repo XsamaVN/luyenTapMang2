@@ -6,9 +6,11 @@
 </head>
 <body>
 <script>
-  let a = prompt('nhập chuỗi');
-  let b = a.split(' ');
-  alert('số từ trong chuỗi: ' + b.length)
+    let a =['a-b','c-d','e-f']
+    let newa = a.map((phanTu) => {
+        return phanTu.replace(/-/g, '_');
+    });
+    document.write(newa)
 </script>
 </body>
 </html>
